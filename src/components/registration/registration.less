@@ -1,0 +1,30 @@
+@import "../../utils/colors";
+
+.registration {
+  align-items: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  &__header {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  input {
+    margin-bottom: 24px;
+  }
+  &__btn {
+    border: none;
+    background-color: @font-color;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../utils/colors";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background-color: @backgroung-color;
+  align-items: center;
+  justify-content: center;
+  &__header {
+    font-size: 24px;
+    margin-left: -6px;
+    font-weight: 700;
+    width: auto;
+  }
+  &__login {
+    margin-left:auto;
+    margin-right: 12px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__search {
+    width: 200px;
+    margin-left: 30px;
+  }
+  &__registration {
+    cursor: pointer;
+    margin-left:auto;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.user-avatar {
+  margin-left: 16px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.container {
+  width: 1140px;
+  display: flex;
+  align-items: center;
+}
+.navbar__logo {
+  width: 64px;
+  height: 32px;
+}
+.toMainPage {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}

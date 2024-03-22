@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 1140px;
+  height: 36px;
+  align-items: center;
+}
+.delete-avatar {
+  width: auto;
+  height: 100%;
+  margin-right: 10px;
+  border: 2px solid #566885;
+  border-radius: 8px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.upload-avatar {
+  height: 100%;
+  border: 2px solid #566885;
+  border-radius: 8px;
+  padding: 4px 6px;
+  width: auto;
+  cursor: pointer;
+}
+/*# sourceMappingURL=profile.css.map */

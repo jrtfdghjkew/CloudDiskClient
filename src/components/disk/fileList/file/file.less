@@ -1,0 +1,106 @@
+@import "../../../../utils/colors";
+
+.file {
+  margin: 10px 0;
+  border: solid 2px @font-color;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  width: 100%;
+  padding: 5px;
+  &:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+  }
+  &__img {
+    grid-column-start: 1;
+    justify-self: center;
+  }
+  &__name {
+    grid-column-start: 2;
+    justify-self: center;
+  }
+  &__date {
+    grid-column-start: 5;
+    justify-self: center;
+  }
+  &__size {
+    grid-column-start: 6;
+    justify-self: center;
+  }
+  &__btn-download {
+    display: none;
+    cursor: pointer;
+    margin-right: 4px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid @font-color;
+    &:hover {
+      background-color: @font-color;
+      color: white;
+    }
+  }
+  &__btn-delete {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid @font-color;
+    &:hover {
+      background-color: @font-color;
+      color: white;
+    }
+  }
+
+  &:hover &__date {
+    grid-column-start: 3;
+  }
+  &:hover &__size {
+    grid-column-start: 4;
+  }
+  &:hover &__btn-download {
+    grid-column-start: 5;
+    display: block;
+  }
+  &:hover &__btn-delete {
+    grid-column-start: 6;
+    display: block;
+  }
+}
+
+.file-plate {
+  width: 160px;
+  height: 180px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    height: 100px;
+    width: 100px;
+  }
+  &__btns {
+    display: none;
+  }
+  &:hover &__btns {
+    display: flex;
+  }
+  &:hover &__name {
+    height: auto;
+  }
+  &__name {
+    margin-bottom: 8px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
